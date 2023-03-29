@@ -1,0 +1,72 @@
+table {
+    border-spacing: 0;
+    width: 90%;
+    margin: 5px 5px;
+    background-color: rgb(2, 49, 141);
+    color: white;
+    text-align: center;
+    border: white solid 2px
+}
+
+th {
+    background-color: rgb(179, 0, 255);
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    text-align: left;
+    padding: 5px;
+    text-align: center;
+    border: solid white 2px;
+}
+
+td {
+    border-top: 1px solid darkgrey;
+    padding: 5px;
+}
+
+tbody tr:hover {
+    background-color: rgb(255, 0, 0);
+}
+
+a {
+    text-decoration: underline;
+}
+
+.button {
+    display: block;
+    border-radius: 10px;
+    transition: .3s;
+    box-shadow: 1px 1px 3px -1px rgb(0 0 0);
+    padding: 4px 4px;
+    text-align: center;
+    border-style: none;
+    line-height: 20px;
+    margin: 10px 0;
+    width: 100px;
+    background: rgb(152, 25, 255);
+    color: rgb(255, 255, 255);
+    cursor: crosshair;
+}
+
+input[type=text],
+input[type=password] {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px 15px;
+    border-radius: 20px;
+    border: none;
+    color: white;
+    margin: 4px 0 8px;
+    outline: 0;
+    transition: .3s;
+}
+
+.button:hover,
+input[type=text]:hover,
+input[type=password]:hover {
+    opacity: .7;
+}
+body{
+    background: black;
+    color: white;
+    text-align: center;
+}
