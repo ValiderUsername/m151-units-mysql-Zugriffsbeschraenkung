@@ -4,7 +4,7 @@ export function render(movies, user) {
 <html lang="de">
 <head>
   <meta charset="UTF-8">
-  <title>Filmliste</title>
+  <title>Filmratingliste</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -12,7 +12,7 @@ Angemeldet als: ${user.firstname} ${
     user.lastname
   } &nbsp;&nbsp;<a href="/logout" class="button">abmelden</a>
   <table>
-    <thead><tr><th>Id</th><th>Title</th><th>Rating</th><th></th><th></th></tr></thead>
+    <thead><tr><th>Id</th><th>Title</th><th>ReleaseYear</th><th>Rating</th><th>Edit</th><th>Delete</th></tr></thead>
     <tbody>
       ${movies
         .map(
@@ -20,6 +20,7 @@ Angemeldet als: ${user.firstname} ${
         <tr>
           <td>${movie.id}</td>
           <td>${movie.title}</td>
+          <td>${movie.year}</td>
           <td>
             <a href="/movie/rating/1/${movie.id}"' ${movie.rating >= 1 ? 'style="color: gold;"' : ''}>&#9733;</a>
             <a href="/movie/rating/2/${movie.id}"' ${movie.rating >= 2 ? 'style="color: gold;"' : ''}>&#9733;</a>
@@ -28,8 +29,9 @@ Angemeldet als: ${user.firstname} ${
             <a href="/movie/rating/5/${movie.id}"' ${movie.rating >= 5 ? 'style="color: gold;"' : ''}>&#9733;</a>
             ${movie.allRatings ? Number(movie.allRatings).toFixed(1) : 0.0}
           </td>
+          <td width="170"><a href="/movie/form/${movie.id}" class="button">bearbeiten</a></td>
           <td width="200"><a href="/movie/delete/${movie.id}" class="button">löschen</a></td>
-          <td width="170"><a href="/movie/form/${movie.id}" class="button">bearbeiten</a></td> 
+           
         </tr>`
         )
         .join('')}

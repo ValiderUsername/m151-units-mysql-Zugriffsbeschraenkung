@@ -5,7 +5,7 @@ table {
     background-color: rgb(2, 49, 141);
     color: white;
     text-align: center;
-    border: white solid 2px
+    border: white solid 2px;
 }
 
 th {
@@ -19,29 +19,29 @@ th {
 }
 
 td {
-    border-top: 1px solid darkgrey;
-    padding: 5px;
+    border-top: 1.5px solid rgb(238, 0, 255);
+    padding: 8px;
 }
 
 tbody tr:hover {
-    background-color: rgb(255, 0, 0);
+    background-color: rgb(255, 0, 238);
 }
 
 a {
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 .button {
-    display: block;
-    border-radius: 10px;
+    display: inline;
+    border-radius: 12px;
     transition: .3s;
-    box-shadow: 1px 1px 3px -1px rgb(0 0 0);
-    padding: 4px 4px;
+    box-shadow: 2px 2px 4px -2px rgb(0 0 0);
+    padding: 10px 12px;
     text-align: center;
     border-style: none;
-    line-height: 20px;
-    margin: 10px 0;
-    width: 100px;
+    line-height: 50px;
+    margin: 10px 5px;
+    width: 120px;
     background: rgb(152, 25, 255);
     color: rgb(255, 255, 255);
     cursor: crosshair;
@@ -50,23 +50,24 @@ a {
 input[type=text],
 input[type=password] {
     width: 100%;
-    max-width: 300px;
-    padding: 10px 15px;
-    border-radius: 20px;
-    border: none;
-    color: white;
+    max-width: 350px;
+    padding: 8px 12px;
+    border-radius: 15px;
+    color: rgb(255, 0, 0);
+    text-align: center;
+    font-weight: bold;
     margin: 4px 0 8px;
-    outline: 0;
     transition: .3s;
 }
 
 .button:hover,
 input[type=text]:hover,
 input[type=password]:hover {
-    opacity: .7;
+    opacity: 0.8;
 }
 body{
     background: black;
-    color: white;
+    color: lightsteelblue;
     text-align: center;
+    font-weight: bold;
 }
