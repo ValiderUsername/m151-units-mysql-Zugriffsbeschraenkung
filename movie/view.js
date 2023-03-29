@@ -12,7 +12,7 @@ Angemeldet als: ${user.firstname} ${
     user.lastname
   } &nbsp;&nbsp;<a href="/logout" class="button">abmelden</a>
   <table>
-    <thead><tr><th>Id</th><th>Title</th><th>ReleaseYear</th><th>Rating</th><th>Edit</th><th>Delete</th></tr></thead>
+    <thead><tr><th>FilmID</th><th>Filmtitel</th><th>Erscheinungsjahr</th><th>Rating</th><th>Bearbeiten</th><th>Löschen</th></tr></thead>
     <tbody>
       ${movies
         .map(
