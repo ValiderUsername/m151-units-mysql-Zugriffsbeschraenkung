@@ -2,14 +2,14 @@ table {
     border-spacing: 0;
     width: 90%;
     margin: 5px 5px;
-    background-color: rgb(2, 49, 141);
+    background-color: rgb(204, 0, 65);
     color: white;
     text-align: center;
     border: white solid 2px;
 }
 
 th {
-    background-color: rgb(179, 0, 255);
+    background-color: rgb(99, 4, 140);
     font-weight: bold;
     color: rgb(255, 255, 255);
     text-align: left;
@@ -42,7 +42,7 @@ a {
     line-height: 50px;
     margin: 10px 5px;
     width: 120px;
-    background: rgb(152, 25, 255);
+    background: rgb(115, 19, 194);
     color: rgb(255, 255, 255);
     cursor: crosshair;
 }
@@ -70,4 +70,7 @@ body{
     color: lightsteelblue;
     text-align: center;
     font-weight: bold;
+}
+a{
+ font-size: 18px;
 }
